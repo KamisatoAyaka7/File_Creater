@@ -2,12 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
-QT_BEGIN_NAMESPACE
-namespace Ui {
-class MainWindow;
-}
-QT_END_NAMESPACE
+#include <QTabWidget>
+#include <QFileDialog>
+#include <QTextCodec>
+#include <QSettings>
 
 class MainWindow : public QMainWindow
 {
@@ -17,11 +15,23 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    void fib_clicked();
-    void edb_clicked();
-    void vib_clicked();
+private slots:
+    void newFile();
+    void openFile();
+    void saveFile();
+    void saveAs();
+    void closeTab(int index);
+    void showHexView();
+    void showSettingsDialog();
+    void applySettings(const QFont &font, const QColor &backgroundColor);
 
 private:
-    Ui::MainWindow *ui;
+    void createIntegratedMenuToolBar();
+    void loadSettings();
+    void saveSettings();
+
+    QTabWidget *tabWidget;
+    QSettings settings;
 };
+
 #endif // MAINWINDOW_H
