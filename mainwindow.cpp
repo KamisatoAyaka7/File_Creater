@@ -17,7 +17,7 @@
 #include <QShortcut>
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent), settings("settings.ini", QSettings::IniFormat)
+    : QMainWindow(parent), settings(":/settings.ini", QSettings::IniFormat)
 {
     tabWidget = new QTabWidget(this);
     tabWidget->setTabsClosable(true); // 启用标签页关闭按钮
@@ -36,6 +36,9 @@ MainWindow::MainWindow(QWidget *parent)
     saveasShortcut = new QShortcut(QKeySequence::SaveAs, this);
     findShortcut = new QShortcut(QKeySequence::Find, this);
     replaceShortcut = new QShortcut(QKeySequence::Replace, this);
+    fileLeftShortcut = new QShortcut(QKeySequence("F1"),this);
+    fileRightShortcut = new QShortcut(QKeySequence("F2"),this);
+
     connect(saveShortcut,&QShortcut::activated,this,&MainWindow::saveFile);
     connect(openShortcut,&QShortcut::activated,this,[=](){
         openFile();
@@ -44,6 +47,18 @@ MainWindow::MainWindow(QWidget *parent)
     connect(saveasShortcut,&QShortcut::activated,this,&MainWindow::saveAs);
     connect(findShortcut,&QShortcut::activated,this,&MainWindow::showFindDialog);
     connect(replaceShortcut,&QShortcut::activated,this,&MainWindow::showReplaceDialog);
+    connect(fileLeftShortcut,&QShortcut::activated,this,[=](){
+        if(0<tabWidget->currentIndex())
+        {
+            tabWidget->setCurrentIndex(tabWidget->currentIndex()-1);
+        }
+    });
+    connect(fileRightShortcut,&QShortcut::activated,this,[=](){
+        if(tabWidget->count()-1>tabWidget->currentIndex())
+        {
+            tabWidget->setCurrentIndex(tabWidget->currentIndex()+1);
+        }
+    });
 
     setWindowTitle(tr("Apple_Cat"));
     resize(800, 600);
@@ -60,7 +75,7 @@ void MainWindow::newFile()
     connect(editor,&CodeEditor::cursorPositionChanged,this,&MainWindow::updateStatusBar);
 
     // 设置高亮器和补全器
-    ConfigReader configReader("/syntax_config.json");
+    ConfigReader configReader(":/syntax_config.json");
     QMap<QString, QColor> keywords = configReader.getKeywords();
     editor->setCompleter(new QCompleter(keywords.keys(), editor));
     new SyntaxHighlighter(editor->document(), keywords);
@@ -106,7 +121,7 @@ void MainWindow::openFile(bool isStart,QString name)
     file.close();
 
     // 设置高亮器和补全器
-    ConfigReader configReader(MainWindow::absolutePath+"/syntax_config.json");
+    ConfigReader configReader(":/syntax_config.json");
     QMap<QString, QColor> keywords = configReader.getKeywords();
     editor->setCompleter(new QCompleter(keywords.keys(), editor));
     new SyntaxHighlighter(editor->document(), keywords);

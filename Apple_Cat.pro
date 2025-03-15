@@ -44,6 +44,7 @@ DISTFILES += \
     settings.ini \
     syntax_config.json
 
-RESOURCES +=
+RESOURCES += \
+    resources.qrc
 
 RC_FILE += logo.rc

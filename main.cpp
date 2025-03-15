@@ -7,7 +7,6 @@
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    QApplication::setAttribute(Qt::AA_UseOpenGLES);//Andorid
     MainWindow mainWindow;
     QFileInfo QFI1(argv[0]);
     mainWindow.absolutePath=QFI1.absolutePath();

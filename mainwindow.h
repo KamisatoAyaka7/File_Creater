@@ -52,6 +52,8 @@ private:
     QShortcut *saveasShortcut;
     QShortcut *findShortcut;
     QShortcut *replaceShortcut;
+    QShortcut *fileLeftShortcut;
+    QShortcut *fileRightShortcut;
 };
 
 #endif // MAINWINDOW_H

@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>settings.ini</file>
+        <file>syntax_config.json</file>
+        <file>license.txt</file>
+    </qresource>
+</RCC>

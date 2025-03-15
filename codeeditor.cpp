@@ -115,8 +115,9 @@ void CodeEditor::keyPressEvent(QKeyEvent *e)
         }
     }
 
-    // 处理 Tab 键触发补全
-    if (e->key() == Qt::Key_Tab && m_completer) {
+    // 处理 Ctrl Tab 键触发补全
+    Qt::KeyboardModifiers modifiers = e->modifiers();
+    if ((modifiers & (Qt::ControlModifier)) == (Qt::ControlModifier) && (e->key() == Qt::Key_Tab) && m_completer) {
         QString completionPrefix = textUnderCursor();
         if (!completionPrefix.isEmpty()) {
             m_completer->setCompletionPrefix(completionPrefix);
