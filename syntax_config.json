@@ -1,0 +1,55 @@
+
+
+
+
+
+
+	{
+    "keywords": [
+        {"word": "int", "color": "#8019FF"},
+        {"word": "float", "color": "#8019FF"},
+        {"word": "double", "color": "#8019FF"},
+        {"word": "char", "color": "#8019FF"},
+        {"word": "short", "color": "#8019FF"},
+        {"word": "long", "color": "#8019FF"},
+        {"word": "signed", "color": "#8019FF"},
+        {"word": "unsigned", "color": "#8019FF"},
+        {"word": "const", "color": "#8019FF"},
+        {"word": "static", "color": "#8019FF"},
+        {"word": "auto", "color": "#8019FF"},
+        {"word": "extern", "color": "#8019FF"},
+        {"word": "register", "color": "#8019FF"},
+        {"word": "enum", "color": "#8019FF"},
+        {"word": "bool", "color": "#8019FF"},
+        {"word": "void", "color": "#8019FF"},
+        {"word": "friend", "color": "#8019FF"},
+        {"word": "namespace", "color": "#8019FF"},
+        {"word": "new", "color": "#FF86F9"},
+        {"word": "delete", "color": "#FF86F9"},
+        {"word": "sizeof", "color": "#FF86F9"},
+        {"word": "class", "color": "#155bFF"},
+        {"word": "struct", "color": "#155bFF"},
+        {"word": "union", "color": "#155bFF"},
+        {"word": "asm", "color": "#155bFF"},
+        {"word": "return", "color": "#FF8A23"},
+        {"word": "if", "color": "#FF8A23"},
+        {"word": "else", "color": "#FF8A23"},
+        {"word": "elif", "color": "#FF8A23"},
+        {"word": "for", "color": "#FF8A23"},
+        {"word": "while", "color": "#FF8A23"},
+        {"word": "case", "color": "#FF8A23"},
+        {"word": "catch", "color": "#FF8A23"},
+        {"word": "try", "color": "#FF8A23"},
+        {"word": "break", "color": "#FF8A23"},
+        {"word": "continue", "color": "#FF8A23"},
+        {"word": "private", "color": "#FF8A23"},
+        {"word": "protected", "color": "#FF8A23"},
+        {"word": "public", "color": "#FF8A23"},
+        {"word": "inline", "color": "#FF8A23"},
+        {"word": "goto", "color": "#FF8A23"},
+        {"word": "include", "color": "#13FF4A"},
+        {"word": "define", "color": "#13FF4A"},
+        {"word": "ifndef", "color": "#13FF4A"},
+        {"word": "endif", "color": "#13FF4A"}
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "keywords": [
+        {"word": "def", "color": "#008000"},
+        {"word": "class", "color": "#155bFF"},
+        {"word": "module", "color": "#155bFF"},
+        {"word": "if", "color": "#FF8A23"},
+        {"word": "else", "color": "#FF8A23"},
+        {"word": "elsif", "color": "#FF8A23"},
+        {"word": "for", "color": "#FF8A23"},
+        {"word": "while", "color": "#FF8A23"},
+        {"word": "begin", "color": "#FF8A23"},
+        {"word": "rescue", "color": "#FF8A23"},
+        {"word": "return", "color": "#FF8A23"},
+        {"word": "self", "color": "#8019FF"},
+        {"word": "nil", "color": "#8019FF"},
+        {"word": "true", "color": "#8019FF"},
+        {"word": "false", "color": "#8019FF"},
+        {"word": "yield", "color": "#FF86F9"},
+        {"word": "require", "color": "#008000"},
+        {"word": "include", "color": "#008000"},
+        {"word": "attr_accessor", "color": "#155bFF"},
+        {"word": "puts", "color": "#13FF4A"},
+        {"word": "gets", "color": "#13FF4A"},
+        {"word": "each", "color": "#13FF4A"},
+        {"word": "map", "color": "#13FF4A"},
+        {"word": "select", "color": "#13FF4A"},
+        {"word": "Time.now", "color": "#13FF4A"},
+        {"word": "File.open", "color": "#13FF4A"}
+    ]
+}
