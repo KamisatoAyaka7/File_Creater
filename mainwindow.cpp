@@ -16,7 +16,6 @@
 #include <QToolButton>
 #include <QShortcut>
 #include <QComboBox>
-#include <QTextCodec>
 #include <QStringConverter>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -25,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent)
     tabWidget = new QTabWidget(this);
     tabWidget->setTabsClosable(true); // 启用标签页关闭按钮
     tabWidget->setMovable(true);
-    tabWidget->setTabShape(QTabWidget::Triangular);
+    //tabWidget->setTabShape(QTabWidget::Triangular);
     connect(tabWidget, &QTabWidget::tabCloseRequested, this, &MainWindow::closeTab);
     connect(tabWidget, &QTabWidget::currentChanged, this, &MainWindow::updateStatusBar);
     setCentralWidget(tabWidget);
@@ -305,6 +304,8 @@ void MainWindow::reread()
     }
     editor->setPlainText(byteToString(file.readAll()));
     file.close();
+
+    updateStatusBar(); // 更新状态栏
 }
 
 void MainWindow::startOpen(QString name)
