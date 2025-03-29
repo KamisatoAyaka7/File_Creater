@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>settings.ini</file>
+        <file>python_syntax_config.json</file>
+        <file>cpp_syntax_config.json</file>
+        <file>javascript_syntax_config.json</file>
+        <file>java_syntax_config.json</file>
+        <file>csharp_syntax_config.json</file>
+        <file>rust_syntax_config.json</file>
+        <file>ruby_syntax_config.json</file>
+        <file>default_syntax_config.json</file>
+        <file>apple_cat.txt</file>
+    </qresource>
+</RCC>

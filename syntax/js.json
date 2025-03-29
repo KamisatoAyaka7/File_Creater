@@ -1,0 +1,32 @@
+{
+    "keywords": [
+        {"word": "function", "color": "#008000"},
+        {"word": "class", "color": "#155bFF"},
+        {"word": "if", "color": "#FF8A23"},
+        {"word": "else", "color": "#FF8A23"},
+        {"word": "for", "color": "#FF8A23"},
+        {"word": "while", "color": "#FF8A23"},
+        {"word": "try", "color": "#FF8A23"},
+        {"word": "catch", "color": "#FF8A23"},
+        {"word": "throw", "color": "#FF8A23"},
+        {"word": "return", "color": "#FF8A23"},
+        {"word": "const", "color": "#8019FF"},
+        {"word": "let", "color": "#8019FF"},
+        {"word": "var", "color": "#8019FF"},
+        {"word": "async", "color": "#FF86F9"},
+        {"word": "await", "color": "#FF86F9"},
+        {"word": "export", "color": "#008000"},
+        {"word": "import", "color": "#008000"},
+        {"word": "this", "color": "#8019FF"},
+        {"word": "new", "color": "#FF86F9"},
+        {"word": "delete", "color": "#FF86F9"},
+        {"word": "console.log", "color": "#13FF4A"},
+        {"word": "setTimeout", "color": "#13FF4A"},
+        {"word": "fetch", "color": "#13FF4A"},
+        {"word": "parseInt", "color": "#13FF4A"},
+        {"word": "JSON.stringify", "color": "#13FF4A"},
+        {"word": "Array.map", "color": "#13FF4A"},
+        {"word": "Promise.resolve", "color": "#13FF4A"},
+        {"word": "document.querySelector", "color": "#13FF4A"}
+    ]
+}
