@@ -1,0 +1,10 @@
+{
+    "name": "HTML",
+    "extensions": ["html", "htm", "xhtml"],
+    "blockComments": [["<!--", "-->"]],
+    "regexRules": [
+        {"pattern": "</?[A-Za-z_][\\w:-]*", "color": "#155bFF"},
+        {"pattern": "\"(?:[^\"\\\\\\n]|\\\\.)*\"", "color": "#a31515"},
+        {"pattern": "&[A-Za-z#0-9]+;", "color": "#a31515"}
+    ]
+}

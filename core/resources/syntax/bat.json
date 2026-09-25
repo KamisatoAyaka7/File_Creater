@@ -1,0 +1,29 @@
+{
+    "name": "Batch",
+    "extensions": ["bat", "cmd"],
+    "caseSensitive": false,
+    "keywords": [
+        {"word": "echo", "color": "#155bFF"},
+        {"word": "set", "color": "#155bFF"},
+        {"word": "setlocal", "color": "#155bFF"},
+        {"word": "endlocal", "color": "#155bFF"},
+        {"word": "if", "color": "#FF8A23"},
+        {"word": "else", "color": "#FF8A23"},
+        {"word": "for", "color": "#FF8A23"},
+        {"word": "goto", "color": "#FF8A23"},
+        {"word": "call", "color": "#FF86F9"},
+        {"word": "exit", "color": "#FF8A23"},
+        {"word": "rem", "color": "#008000"},
+        {"word": "pause", "color": "#13FF4A"},
+        {"word": "shift", "color": "#FF86F9"},
+        {"word": "start", "color": "#13FF4A"},
+        {"word": "not", "color": "#FF8A23"},
+        {"word": "exist", "color": "#FF8A23"},
+        {"word": "defined", "color": "#FF8A23"}
+    ],
+    "regexRules": [
+        {"pattern": "%%?[A-Za-z_~]\\w*%", "color": "#8019FF"},
+        {"pattern": "\"[^\"]*\"", "color": "#a31515"},
+        {"pattern": "^:[A-Za-z_]\\w*", "color": "#0451a5"}
+    ]
+}

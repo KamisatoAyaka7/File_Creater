@@ -1,0 +1,10 @@
+{
+    "name": "INI",
+    "extensions": ["ini", "cfg", "conf", "properties", "editorconfig"],
+    "lineComment": [";", "#"],
+    "regexRules": [
+        {"pattern": "^\\[[^\\]\\n]*\\]", "color": "#155bFF"},
+        {"pattern": "^[A-Za-z_][\\w. \\t]*(?==)", "color": "#0451a5"},
+        {"pattern": "\"(?:[^\"\\\\\\n]|\\\\.)*\"", "color": "#a31515"}
+    ]
+}

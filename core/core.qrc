@@ -1,0 +1,21 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/syntax">
+        <file alias="cpp.json">resources/syntax/cpp.json</file>
+        <file alias="cs.json">resources/syntax/cs.json</file>
+        <file alias="java.json">resources/syntax/java.json</file>
+        <file alias="js.json">resources/syntax/js.json</file>
+        <file alias="py.json">resources/syntax/py.json</file>
+        <file alias="rb.json">resources/syntax/rb.json</file>
+        <file alias="rs.json">resources/syntax/rs.json</file>
+        <file alias="json.json">resources/syntax/json.json</file>
+        <file alias="xml.json">resources/syntax/xml.json</file>
+        <file alias="html.json">resources/syntax/html.json</file>
+        <file alias="ini.json">resources/syntax/ini.json</file>
+        <file alias="bat.json">resources/syntax/bat.json</file>
+    </qresource>
+    <qresource prefix="/">
+        <file alias="snippets.json">resources/snippets.json</file>
+        <file alias="help.txt">resources/help.txt</file>
+    </qresource>
+</RCC>

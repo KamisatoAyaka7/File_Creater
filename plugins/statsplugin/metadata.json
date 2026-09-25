@@ -1,0 +1,6 @@
+{
+    "name": "Statistics",
+    "version": "1.0",
+    "vendor": "szy",
+    "description": "Adds a Statistics action (chars/words/lines) and sample completions."
+}

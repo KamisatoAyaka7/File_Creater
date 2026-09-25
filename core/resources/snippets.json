@@ -1,0 +1,31 @@
+{
+    "*": [
+        {"prefix": "todo", "body": "TODO: ${cursor}", "detail": "TODO marker"},
+        {"prefix": "fixme", "body": "FIXME: ${cursor}", "detail": "FIXME marker"},
+        {"prefix": "note", "body": "NOTE: ${cursor}", "detail": "NOTE marker"},
+        {"prefix": "date", "body": "2026-09-19", "detail": "today's date (edit in snippets.json)"}
+    ],
+    "cpp": [
+        {"prefix": "inc", "body": "#include <${cursor}>", "detail": "#include <...>"},
+        {"prefix": "main", "body": "int main(int argc, char *argv[])\n{\n    ${cursor}\n    return 0;\n}", "detail": "main function"},
+        {"prefix": "for", "body": "for (int i = 0; i < ${count}; ++i) {\n    ${cursor}\n}", "detail": "indexed for loop"},
+        {"prefix": "forever", "body": "for (;;) {\n    ${cursor}\n}", "detail": "infinite loop"},
+        {"prefix": "class", "body": "class ${Name} {\npublic:\n    ${Name}();\n    ~${Name}();\n\nprivate:\n    ${cursor}\n};", "detail": "class skeleton"},
+        {"prefix": "qconn", "body": "connect(${sender}, &${Sender}::${signal},\n        ${receiver}, &${Receiver}::${slot});", "detail": "Qt connect (pmf syntax)"},
+        {"prefix": "qguard", "body": "QPointer<${T}> ${cursor}", "detail": "QPointer guard"}
+    ],
+    "py": [
+        {"prefix": "main", "body": "def main():\n    ${cursor}\n\n\nif __name__ == \"__main__\":\n    main()", "detail": "main guard"},
+        {"prefix": "def", "body": "def ${name}(${args}):\n    ${cursor}", "detail": "function definition"},
+        {"prefix": "class", "body": "class ${Name}:\n    def __init__(self):\n        ${cursor}", "detail": "class skeleton"},
+        {"prefix": "trye", "body": "try:\n    ${cursor}\nexcept Exception as e:\n    print(e)", "detail": "try/except"},
+        {"prefix": "with", "body": "with open(${path}) as f:\n    ${cursor}", "detail": "with open"}
+    ],
+    "js": [
+        {"prefix": "log", "body": "console.log(${cursor});", "detail": "console.log"},
+        {"prefix": "fn", "body": "function ${name}(${args}) {\n    ${cursor}\n}", "detail": "function"},
+        {"prefix": "arrow", "body": "const ${name} = (${args}) => {\n    ${cursor}\n};", "detail": "arrow function"},
+        {"prefix": "aofe", "body": "${array}.forEach((${item}) => {\n    ${cursor}\n});", "detail": "array.forEach"},
+        {"prefix": "tryc", "body": "try {\n    ${cursor}\n} catch (e) {\n    console.error(e);\n}", "detail": "try/catch"}
+    ]
+}

@@ -1,0 +1,52 @@
+Apple_Cat 4.0 - Help
+====================
+
+Apple_Cat is a tabbed text editor with async file loading, an embedded
+hex editor, multi-source completion and a plugin interface.
+
+Menus
+-----
+File      New / Open / Save / Save As / Reload / Recent files / Exit
+Edit      Undo / Redo / Cut / Copy / Paste / Select all / Find & Replace
+View      Open the current file in the hex editor, Settings
+Plugins   Menus contributed by loaded plugins
+Help      This help, About, Run self test
+
+Shortcuts
+---------
+Ctrl+N            New file
+Ctrl+O            Open file
+Ctrl+S            Save
+Ctrl+Shift+S      Save as
+Ctrl+R            Reload from disk
+Ctrl+F            Find bar (non-modal, the editor stays usable)
+Ctrl+H            Find & replace bar
+F1 / F2           Previous / next tab
+Ctrl+Space        Manual completion popup
+Esc               Close the find bar / completion popup
+
+Features
+--------
+* Every file loads on its own worker thread; large files stream into the
+  editor in chunks so the UI never freezes. Tab titles show load progress.
+* The hex editor opens as a tab in the main window, is fully editable
+  (hex or ASCII column) and can save back to disk with undo support.
+* Completion draws from language keywords, snippets (snippets.json),
+  words already in your document and plugin providers; ranking is
+  prefix-first with optional fuzzy subsequence matching.
+* Encodings: UTF-8/16/32 with BOM handling, ISO-8859-1 and the legacy
+  code pages provided by the OS (GBK, Big5, Shift-JIS, EUC-KR, KOI8-R,
+  Windows-125x, ...). "auto" detects BOMs, UTF-16 without BOM, strict
+  UTF-8 and common legacy encodings.
+* Settings (View > Settings) cover editor, colors, completion, encodings,
+  hex view and plugins, and apply live to all open tabs.
+
+Extending
+---------
+Drop syntax/*.json or snippets.json into %APPDATA%/AppleCat to add
+languages and snippets without recompiling. Compile a plugin against
+qt6/interfaces/applecat_plugin.h and place the DLL into the "plugins"
+folder next to the executable (see qt6/plugins/statsplugin for an
+example).
+
+Origin: github.com/KamisatoAyaka7/File_Creater - developed by szy.

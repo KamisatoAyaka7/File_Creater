@@ -1,0 +1,14 @@
+{
+    "name": "JSON",
+    "extensions": ["json", "jsonc", "geojson", "project", "code-workspace"],
+    "keywords": [
+        {"word": "true", "color": "#8019FF"},
+        {"word": "false", "color": "#8019FF"},
+        {"word": "null", "color": "#8019FF"}
+    ],
+    "regexRules": [
+        {"pattern": "\"(?:[^\"\\\\\\n]|\\\\.)*\"(?=\\s*:)", "color": "#0451a5"},
+        {"pattern": "\"(?:[^\"\\\\\\n]|\\\\.)*\"", "color": "#a31515"},
+        {"pattern": "\\b-?\\d+(?:\\.\\d+)?(?:[eE][+-]?\\d+)?\\b", "color": "#098658"}
+    ]
+}

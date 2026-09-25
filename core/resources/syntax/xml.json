@@ -1,0 +1,10 @@
+{
+    "name": "XML",
+    "extensions": ["xml", "svg", "xsl", "xsd", "plist", "pro", "vcxproj", "ui"],
+    "blockComments": [["<!--", "-->"]],
+    "regexRules": [
+        {"pattern": "</?[A-Za-z_][\\w.:-]*", "color": "#155bFF"},
+        {"pattern": "\"(?:[^\"\\\\]|\\\\.)*\"", "color": "#a31515"},
+        {"pattern": "<\\?[A-Za-z][^?]*\\?>", "color": "#808080"}
+    ]
+}
